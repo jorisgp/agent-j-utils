@@ -11,6 +11,7 @@ on:
         required: true
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -43,10 +44,11 @@ jobs:
       - name: Detect prepared release
         id: preparation
         run: |
-          git fetch origin main
+          git fetch origin main --tags
           VERSION="$(node -p "require('./libs/agent-j-husky-checks/package.json').version")"
           SUBJECTS="$(git log --format=%s origin/main..HEAD -- libs/agent-j-husky-checks/package.json)"
-          if grep -Fxq "release(agent-j-husky-checks): ${VERSION}" <<< "${SUBJECTS}"; then
+          if ! git show-ref --verify --quiet "refs/tags/agent-j-husky-checks@${VERSION}" &&
+            grep -Fxq "release(agent-j-husky-checks): ${VERSION}" <<< "${SUBJECTS}"; then
             echo "already_prepared=true" >> "$GITHUB_OUTPUT"
             echo "Keeping prepared release version ${VERSION}."
           else
@@ -78,13 +80,20 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      - name: Choose unused release version
+        id: next_version
+        if: steps.preparation.outputs.already_prepared != 'true'
+        run: |
+          VERSION="$(node scripts/next-release-version.mjs agent-j-husky-checks libs/agent-j-husky-checks)"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
       - name: Preview release
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: node scripts/release-group.mjs husky-checks version patch --dry-run
+        run: node scripts/release-group.mjs husky-checks version "${{ steps.next_version.outputs.version }}" --dry-run
 
       - name: Version package
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: node scripts/release-group.mjs husky-checks version patch --stage-changes=false
+        run: node scripts/release-group.mjs husky-checks version "${{ steps.next_version.outputs.version }}" --stage-changes=false
 
       - name: Read release version
         id: release
@@ -130,3 +139,10 @@ jobs:
               --title "Release agent-j-husky-checks ${{ steps.release.outputs.version }}" \
               --body "Release agent-j-husky-checks ${{ steps.release.outputs.version }}"
           fi
+
+      - name: Verify prepared release head
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Pushes using GITHUB_TOKEN do not trigger the gate's push workflow.
+        # Dispatch explicitly so the check runs on the generated release commit.
+        run: gh workflow run release-preparation-gate.yml --ref "${RELEASE_BRANCH}"
