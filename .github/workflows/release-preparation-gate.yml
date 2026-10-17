@@ -1,6 +1,7 @@
 name: Release Preparation Gate
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - release/components/**
@@ -19,9 +20,11 @@ jobs:
     name: Release preparation
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout pull request
+      - name: Checkout release head
         uses: actions/checkout@v7
         with:
+          # PR merge commits can inherit a different package version from main.
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
 
       - name: Verify release preparation
@@ -52,7 +55,8 @@ jobs:
           VERSION="$(node -p "require('./${PACKAGE_PATH}/package.json').version")"
           RELEASE_COMMIT="release(${PROJECT}): ${VERSION}"
 
-          if ! git log --format=%s "origin/${BASE_REF}..HEAD" -- "${PACKAGE_PATH}/package.json" | grep -Fxq "${RELEASE_COMMIT}"; then
+          SUBJECTS="$(git log --format=%s "origin/${BASE_REF}..HEAD" -- "${PACKAGE_PATH}/package.json")"
+          if ! grep -Fxq "${RELEASE_COMMIT}" <<< "${SUBJECTS}"; then
             echo "::error::The prepare stage has not completed for ${PROJECT} ${VERSION}."
             exit 1
           fi
