@@ -51,9 +51,14 @@ jobs:
               ;;
           esac
 
-          git fetch origin "${BASE_REF}"
+          git fetch origin "${BASE_REF}" --tags
           VERSION="$(node -p "require('./${PACKAGE_PATH}/package.json').version")"
           RELEASE_COMMIT="release(${PROJECT}): ${VERSION}"
+
+          if git show-ref --verify --quiet "refs/tags/${PROJECT}@${VERSION}"; then
+            echo "::error::Release version ${PROJECT}@${VERSION} is already tagged. Prepare a new version."
+            exit 1
+          fi
 
           SUBJECTS="$(git log --format=%s "origin/${BASE_REF}..HEAD" -- "${PACKAGE_PATH}/package.json")"
           if ! grep -Fxq "${RELEASE_COMMIT}" <<< "${SUBJECTS}"; then
