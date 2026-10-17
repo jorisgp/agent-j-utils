@@ -1,0 +1,29 @@
+:host {
+  color: var(--agentj-candle-doji, #64748b);
+  cursor: pointer;
+  outline: none;
+}
+:host(.agentjds-candle--rising) {
+  color: var(--agentj-candle-rising, #059669);
+}
+:host(.agentjds-candle--falling) {
+  color: var(--agentj-candle-falling, #e11d48);
+}
+.agentjds-candle__hit {
+  fill: transparent;
+}
+.agentjds-candle__wick,
+.agentjds-candle__body {
+  stroke: currentColor;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+.agentjds-candle__body {
+  fill: currentColor;
+}
+:host(:hover) .agentjds-candle__body,
+:host(:focus-visible) .agentjds-candle__body,
+:host(.agentjds-candle--selected) .agentjds-candle__body {
+  stroke-width: 3;
+}

@@ -48,7 +48,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    icon: \"attach\",\n    variant: \"ghost\",\n    size: \"md\",\n    shape: \"square\",\n    ariaLabel: \"Attach file\",\n  },\n}"
+                "defaultValue": "{\n  args: {\n    icon: 'attach',\n    variant: 'ghost',\n    size: 'md',\n    shape: 'square',\n    ariaLabel: 'Attach file',\n  },\n}"
             },
             {
                 "name": "Centered",
@@ -58,7 +58,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: \"Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.\",\n    centered: true,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    text: 'Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.',\n    centered: true,\n  },\n}"
             },
             {
                 "name": "Check",
@@ -68,7 +68,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"check\", size: \"md\", color: \"success\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: 'check', size: 'md', color: 'success' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Close",
@@ -78,7 +78,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"close\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: 'close', size: 'md', color: 'inherit' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "config",
@@ -108,7 +108,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"danger\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</agentjds-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: 'danger', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Default",
@@ -118,7 +118,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Claude Opus 4.1\",\n    variant: \"ghost\",\n    size: \"md\",\n    options,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Claude Opus 4.1',\n    variant: 'ghost',\n    size: 'md',\n    options,\n  },\n}"
             },
             {
                 "name": "Default",
@@ -128,7 +128,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    color: \"#ffffff\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    color: '#ffffff',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
             },
             {
                 "name": "Default",
@@ -138,7 +138,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { text: \"Badge\", variant: \"neutral\", size: \"md\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></agentjds-badge>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { text: 'Badge', variant: 'neutral', size: 'md' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></agentjds-badge>`,\n  }),\n}"
             },
             {
                 "name": "Default",
@@ -148,17 +148,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: \"Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.\",\n    centered: false,\n  },\n}"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    text: 'Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.',\n    centered: false,\n  },\n}"
             },
             {
                 "name": "Default",
@@ -168,17 +158,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    level: 1,\n    size: \"xl\",\n    muted: false,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    level: 1,\n    size: 'xl',\n    muted: false,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { type: \"text\", size: \"md\", placeholder: \"Enter text...\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: 'info', size: 'md', color: 'inherit' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Default",
@@ -188,7 +178,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"I accept the terms and conditions\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: 'I accept the terms and conditions',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: { type: 'text', size: 'md', placeholder: 'Enter text...' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Default",
@@ -198,7 +198,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Status\",\n    placeholder: \"Select status\",\n    size: \"md\",\n    options: [\n      { label: \"Open\", value: \"open\" },\n      { label: \"In Progress\", value: \"progress\" },\n      { label: \"Done\", value: \"done\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Status',\n    placeholder: 'Select status',\n    size: 'md',\n    options: [\n      { label: 'Open', value: 'open' },\n      { label: 'In Progress', value: 'progress' },\n      { label: 'Done', value: 'done' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
             },
             {
                 "name": "Default",
@@ -208,7 +208,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Priority\",\n    options: [\n      { label: \"Low\", value: \"low\" },\n      { label: \"Medium\", value: \"medium\" },\n      { label: \"High\", value: \"high\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Priority',\n    options: [\n      { label: 'Low', value: 'low' },\n      { label: 'Medium', value: 'medium' },\n      { label: 'High', value: 'high' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
             },
             {
                 "name": "Default",
@@ -218,7 +218,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    placeholder: \"Leer over...\",\n    disabled: false,\n    maxRows: 6,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" [maxRows]=\"maxRows\" />\n    </div>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    placeholder: 'Leer over...',\n    disabled: false,\n    maxRows: 6,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" [maxRows]=\"maxRows\" />\n    </div>`,\n  }),\n}"
             },
             {
                 "name": "Disabled",
@@ -228,7 +228,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</agentjds-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: 'primary', size: 'md', disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Disabled",
@@ -238,7 +238,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { size: \"md\", placeholder: \"Disabled\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { size: 'md', placeholder: 'Disabled', disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Disabled",
@@ -248,7 +248,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    placeholder: \"Leer over...\",\n    disabled: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" />\n    </div>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    placeholder: 'Leer over...',\n    disabled: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" />\n    </div>`,\n  }),\n}"
             },
             {
                 "name": "Display",
@@ -258,7 +258,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    level: 1,\n    size: \"2xl\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    level: 1,\n    size: '2xl',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
             },
             {
                 "name": "Error",
@@ -268,17 +268,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"error\", size: \"md\", color: \"danger\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
-            },
-            {
-                "name": "Ghost",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    icon: \"mic\",\n    variant: \"ghost\",\n    size: \"md\",\n    shape: \"square\",\n    ariaLabel: \"Voice input\",\n  },\n}"
+                "defaultValue": "{\n  args: { name: 'error', size: 'md', color: 'danger' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Ghost",
@@ -288,7 +278,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"ghost\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</agentjds-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: 'ghost', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</agentjds-button>`,\n  }),\n}"
+            },
+            {
+                "name": "Ghost",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    icon: 'mic',\n    variant: 'ghost',\n    size: 'md',\n    shape: 'square',\n    ariaLabel: 'Voice input',\n  },\n}"
             },
             {
                 "name": "Image",
@@ -298,7 +298,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    src: SAMPLE_LOGO_SRC,\n    alt: \"AgentJ logo\",\n    size: \"md\",\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      \"<agentjds-logo [src]=\\\"src\\\" [alt]=\\\"alt\\\" [size]=\\\"size\\\"></agentjds-logo>\",\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    src: SAMPLE_LOGO_SRC,\n    alt: 'AgentJ logo',\n    size: 'md',\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      '<agentjds-logo [src]=\"src\" [alt]=\"alt\" [size]=\"size\"></agentjds-logo>',\n  }),\n}"
             },
             {
                 "name": "Incoming",
@@ -308,7 +308,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    author: \"Alex\",\n    timestamp: \"10:34\",\n    message: \"Can we ship the dropdown variant in this sprint?\",\n    direction: \"incoming\",\n    tone: \"neutral\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    author: 'Alex',\n    timestamp: '10:34',\n    message: 'Can we ship the dropdown variant in this sprint?',\n    direction: 'incoming',\n    tone: 'neutral',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "Large",
@@ -318,7 +318,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"lg\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</agentjds-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: 'primary', size: 'lg', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Large",
@@ -328,7 +328,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { size: \"lg\", placeholder: \"Large input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { size: 'lg', placeholder: 'Large input' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "LightGray",
@@ -338,7 +338,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    color: \"#f4f7fb\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    color: '#f4f7fb',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -348,7 +348,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta",
-                "defaultValue": "{\n  title: \"Primitives/Overview\",\n  tags: [\"autodocs\"],\n  decorators: [\n    moduleMetadata({\n      imports: [\n        BackgroundComponent,\n        BadgeComponent,\n        ChatInputComponent,\n        DisclaimerComponent,\n        DropdownButtonComponent,\n        LogoComponent,\n      ],\n    }),\n  ],\n}"
+                "defaultValue": "{\n  title: 'Primitives/Overview',\n  tags: ['autodocs'],\n  decorators: [\n    moduleMetadata({\n      imports: [\n        BackgroundComponent,\n        BadgeComponent,\n        ChatInputComponent,\n        DisclaimerComponent,\n        DropdownButtonComponent,\n        LogoComponent,\n      ],\n    }),\n  ],\n}"
             },
             {
                 "name": "meta",
@@ -358,17 +358,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<DropdownButtonComponent>",
-                "defaultValue": "{\n  component: DropdownButtonComponent,\n  title: \"Composites/DropdownButton\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<IconButtonComponent>",
-                "defaultValue": "{\n  component: IconButtonComponent,\n  title: \"Composites/IconButton\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    icon: {\n      control: { type: \"select\" },\n      options: [\n        \"send\",\n        \"attach\",\n        \"mic\",\n        \"close\",\n        \"plus\",\n        \"search\",\n        \"menu\",\n        \"sparkle\",\n      ],\n    },\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    shape: {\n      control: { type: \"select\" },\n      options: [\"circle\", \"square\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n  },\n}"
+                "defaultValue": "{\n  component: DropdownButtonComponent,\n  title: 'Composites/DropdownButton',\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'secondary', 'danger', 'ghost'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -378,7 +368,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<BackgroundComponent>",
-                "defaultValue": "{\n  component: BackgroundComponent,\n  title: \"Primitives/Background\",\n  tags: [\"autodocs\"],\n  parameters: {\n    layout: \"fullscreen\",\n  },\n  argTypes: {\n    color: {\n      control: \"color\",\n    },\n  },\n}"
+                "defaultValue": "{\n  component: BackgroundComponent,\n  title: 'Primitives/Background',\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n  },\n  argTypes: {\n    color: {\n      control: 'color',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -388,7 +378,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<BadgeComponent>",
-                "defaultValue": "{\n  component: BadgeComponent,\n  title: \"Primitives/Badge\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"neutral\", \"primary\", \"success\", \"warning\", \"danger\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\"],\n    },\n  },\n}"
+                "defaultValue": "{\n  component: BadgeComponent,\n  title: 'Primitives/Badge',\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['neutral', 'primary', 'success', 'warning', 'danger'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md'],\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -398,7 +388,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\n  component: ButtonComponent,\n  title: \"Primitives/Button\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n    type: {\n      control: { type: \"select\" },\n      options: [\"button\", \"submit\", \"reset\"],\n    },\n  },\n}"
+                "defaultValue": "{\n  component: ButtonComponent,\n  title: 'Primitives/Button',\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'secondary', 'danger', 'ghost'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: {\n      control: 'boolean',\n    },\n    type: {\n      control: { type: 'select' },\n      options: ['button', 'submit', 'reset'],\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<IconButtonComponent>",
+                "defaultValue": "{\n  component: IconButtonComponent,\n  title: 'Composites/IconButton',\n  tags: ['autodocs'],\n  argTypes: {\n    icon: {\n      control: { type: 'select' },\n      options: [\n        'send',\n        'attach',\n        'mic',\n        'close',\n        'plus',\n        'search',\n        'menu',\n        'sparkle',\n      ],\n    },\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'secondary', 'danger', 'ghost'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    shape: {\n      control: { type: 'select' },\n      options: ['circle', 'square'],\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -408,7 +408,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ChatBubbleComponent>",
-                "defaultValue": "{\n  component: ChatBubbleComponent,\n  title: \"Primitives/Chat Bubble\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    direction: {\n      control: { type: \"select\" },\n      options: [\"incoming\", \"outgoing\"],\n    },\n    tone: {\n      control: { type: \"select\" },\n      options: [\"neutral\", \"primary\", \"success\", \"warning\"],\n    },\n  },\n}"
+                "defaultValue": "{\n  component: ChatBubbleComponent,\n  title: 'Primitives/Chat Bubble',\n  tags: ['autodocs'],\n  argTypes: {\n    direction: {\n      control: { type: 'select' },\n      options: ['incoming', 'outgoing'],\n    },\n    tone: {\n      control: { type: 'select' },\n      options: ['neutral', 'primary', 'success', 'warning'],\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -418,17 +418,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<DisclaimerComponent>",
-                "defaultValue": "{\n  component: DisclaimerComponent,\n  title: \"Primitives/Disclaimer\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    centered: {\n      control: \"boolean\",\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<IconComponent>",
-                "defaultValue": "{\n  component: IconComponent,\n  title: \"Primitives/Icon\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    name: {\n      control: { type: \"select\" },\n      options: [\n        \"close\",\n        \"check\",\n        \"info\",\n        \"warning\",\n        \"error\",\n        \"search\",\n        \"menu\",\n        \"arrow-down\",\n        \"arrow-up\",\n        \"star\",\n        \"plus\",\n        \"minus\",\n      ],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\"],\n    },\n    color: {\n      control: { type: \"select\" },\n      options: [\n        \"primary\",\n        \"secondary\",\n        \"danger\",\n        \"success\",\n        \"warning\",\n        \"inherit\",\n      ],\n    },\n  },\n}"
+                "defaultValue": "{\n  component: DisclaimerComponent,\n  title: 'Primitives/Disclaimer',\n  tags: ['autodocs'],\n  argTypes: {\n    centered: {\n      control: 'boolean',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -438,17 +428,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HeadingComponent>",
-                "defaultValue": "{\n  component: HeadingComponent,\n  title: \"Primitives/Heading\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    level: {\n      control: { type: \"select\" },\n      options: [1, 2, 3, 4, 5, 6],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\", \"2xl\"],\n    },\n    muted: {\n      control: \"boolean\",\n    },\n  },\n}"
+                "defaultValue": "{\n  component: HeadingComponent,\n  title: 'Primitives/Heading',\n  tags: ['autodocs'],\n  argTypes: {\n    level: {\n      control: { type: 'select' },\n      options: [1, 2, 3, 4, 5, 6],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl'],\n    },\n    muted: {\n      control: 'boolean',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<InputComponent>",
-                "defaultValue": "{\n  component: InputComponent,\n  title: \"Primitives/Input\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    type: {\n      control: { type: \"select\" },\n      options: [\"text\", \"email\", \"password\", \"number\", \"tel\", \"url\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    readonly: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                "type": "Meta<IconComponent>",
+                "defaultValue": "{\n  component: IconComponent,\n  title: 'Primitives/Icon',\n  tags: ['autodocs'],\n  argTypes: {\n    name: {\n      control: { type: 'select' },\n      options: [\n        'close',\n        'check',\n        'info',\n        'warning',\n        'error',\n        'search',\n        'menu',\n        'arrow-down',\n        'arrow-up',\n        'star',\n        'plus',\n        'minus',\n      ],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['xs', 'sm', 'md', 'lg', 'xl'],\n    },\n    color: {\n      control: { type: 'select' },\n      options: [\n        'primary',\n        'secondary',\n        'danger',\n        'success',\n        'warning',\n        'inherit',\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -458,7 +448,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputCheckboxComponent>",
-                "defaultValue": "{\n  component: InputCheckboxComponent,\n  title: \"Primitives/Input Checkbox\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                "defaultValue": "{\n  component: InputCheckboxComponent,\n  title: 'Primitives/Input Checkbox',\n  tags: ['autodocs'],\n  argTypes: {\n    disabled: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<InputComponent>",
+                "defaultValue": "{\n  component: InputComponent,\n  title: 'Primitives/Input',\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: { type: 'select' },\n      options: ['text', 'email', 'password', 'number', 'tel', 'url'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: { control: 'boolean' },\n    readonly: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -468,7 +468,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputDropdownComponent>",
-                "defaultValue": "{\n  component: InputDropdownComponent,\n  title: \"Primitives/Input Dropdown\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                "defaultValue": "{\n  component: InputDropdownComponent,\n  title: 'Primitives/Input Dropdown',\n  tags: ['autodocs'],\n  argTypes: {\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -478,7 +478,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputRadioComponent>",
-                "defaultValue": "{\n  component: InputRadioComponent,\n  title: \"Primitives/Input Radio\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                "defaultValue": "{\n  component: InputRadioComponent,\n  title: 'Primitives/Input Radio',\n  tags: ['autodocs'],\n  argTypes: {\n    disabled: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -488,7 +488,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<LogoComponent>",
-                "defaultValue": "{\n  component: LogoComponent,\n  title: \"Primitives/Logo\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    src: { control: \"text\" },\n    alt: { control: \"text\" },\n    text: { control: \"text\" },\n    mark: { control: \"text\" },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n  },\n}"
+                "defaultValue": "{\n  component: LogoComponent,\n  title: 'Primitives/Logo',\n  tags: ['autodocs'],\n  argTypes: {\n    src: { control: 'text' },\n    alt: { control: 'text' },\n    text: { control: 'text' },\n    mark: { control: 'text' },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -498,7 +498,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ChatInputComponent>",
-                "defaultValue": "{\n  component: ChatInputComponent,\n  title: \"UI Components/ChatInput\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    placeholder: {\n      control: \"text\",\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n    maxRows: {\n      control: { type: \"number\", min: 1, max: 20 },\n    },\n  },\n}"
+                "defaultValue": "{\n  component: ChatInputComponent,\n  title: 'UI Components/ChatInput',\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n    maxRows: {\n      control: { type: 'number', min: 1, max: 20 },\n    },\n  },\n}"
             },
             {
                 "name": "Muted",
@@ -508,7 +508,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    level: 2,\n    size: \"md\",\n    muted: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Subtitle text</agentjds-heading>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    level: 2,\n    size: 'md',\n    muted: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Subtitle text</agentjds-heading>`,\n  }),\n}"
             },
             {
                 "name": "options",
@@ -518,7 +518,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n  { label: \"Claude Opus 4.1\", value: \"claude-opus-4-1\" },\n  { label: \"Claude Sonnet 4.5\", value: \"claude-sonnet-4-5\" },\n  { label: \"GPT-4o\", value: \"gpt-4o\" },\n  { label: \"Gemini 2.0 Flash\", value: \"gemini-2-flash\", disabled: true },\n]"
+                "defaultValue": "[\n  { label: 'Claude Opus 4.1', value: 'claude-opus-4-1' },\n  { label: 'Claude Sonnet 4.5', value: 'claude-sonnet-4-5' },\n  { label: 'GPT-4o', value: 'gpt-4o' },\n  { label: 'Gemini 2.0 Flash', value: 'gemini-2-flash', disabled: true },\n]"
             },
             {
                 "name": "Outgoing",
@@ -528,7 +528,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    author: \"You\",\n    timestamp: \"10:35\",\n    message: \"Yes, let us include radio + checkbox too.\",\n    direction: \"outgoing\",\n    tone: \"primary\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    author: 'You',\n    timestamp: '10:35',\n    message: 'Yes, let us include radio + checkbox too.',\n    direction: 'outgoing',\n    tone: 'primary',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "Playground",
@@ -538,7 +538,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    props: {\n      modelOptions: [\n        { label: \"Claude Sonnet 4.5\", value: \"claude-sonnet-4-5\" },\n        { label: \"Claude Opus 4.1\", value: \"claude-opus-4-1\" },\n        { label: \"GPT-4o\", value: \"gpt-4o\" },\n      ],\n      disclaimerText:\n        \"Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.\",\n    },\n    template: `\n      <agentjds-background color=\"#0f172a\">\n        <div style=\"position: relative; min-height: 100vh; width: 100%; color: #e2e8f0; overflow: hidden;\">\n          <div style=\"position: absolute; top: 24px; left: 24px; display: flex; align-items: center; gap: 12px;\">\n            <agentjds-logo size=\"sm\" mark=\"AJ\" text=\"AgentJ\"></agentjds-logo>\n            <agentjds-dropdown-button\n              label=\"Claude Sonnet 4.5\"\n              variant=\"ghost\"\n              size=\"md\"\n              [options]=\"modelOptions\"\n            ></agentjds-dropdown-button>\n          </div>\n\n          <div style=\"min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;\">\n            <div style=\"width: min(760px, 100%); display: flex; flex-direction: column; align-items: center; gap: 14px;\">\n              <div style=\"width: min(640px, 100%);\">\n                <agentjds-chat-input\n                  placeholder=\"Vraag iets over jouw werk...\"\n                  [maxRows]=\"6\"\n                ></agentjds-chat-input>\n              </div>\n\n              <div style=\"display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;\">\n                <agentjds-badge text=\"Taken\"></agentjds-badge>\n                <agentjds-badge text=\"Plannen\" variant=\"primary\"></agentjds-badge>\n                <agentjds-badge text=\"Status\" variant=\"success\"></agentjds-badge>\n                <agentjds-badge text=\"Rapporten\" variant=\"warning\"></agentjds-badge>\n              </div>\n            </div>\n          </div>\n\n          <div style=\"position: absolute; left: 24px; right: 24px; bottom: 20px;\">\n            <agentjds-disclaimer [text]=\"disclaimerText\" [centered]=\"true\"></agentjds-disclaimer>\n          </div>\n        </div>\n      </agentjds-background>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    props: {\n      modelOptions: [\n        { label: 'Claude Sonnet 4.5', value: 'claude-sonnet-4-5' },\n        { label: 'Claude Opus 4.1', value: 'claude-opus-4-1' },\n        { label: 'GPT-4o', value: 'gpt-4o' },\n      ],\n      disclaimerText:\n        'Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.',\n    },\n    template: `\n      <agentjds-background color=\"#0f172a\">\n        <div style=\"position: relative; min-height: 100vh; width: 100%; color: #e2e8f0; overflow: hidden;\">\n          <div style=\"position: absolute; top: 24px; left: 24px; display: flex; align-items: center; gap: 12px;\">\n            <agentjds-logo size=\"sm\" mark=\"AJ\" text=\"AgentJ\"></agentjds-logo>\n            <agentjds-dropdown-button\n              label=\"Claude Sonnet 4.5\"\n              variant=\"ghost\"\n              size=\"md\"\n              [options]=\"modelOptions\"\n            ></agentjds-dropdown-button>\n          </div>\n\n          <div style=\"min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;\">\n            <div style=\"width: min(760px, 100%); display: flex; flex-direction: column; align-items: center; gap: 14px;\">\n              <div style=\"width: min(640px, 100%);\">\n                <agentjds-chat-input\n                  placeholder=\"Vraag iets over jouw werk...\"\n                  [maxRows]=\"6\"\n                ></agentjds-chat-input>\n              </div>\n\n              <div style=\"display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;\">\n                <agentjds-badge text=\"Taken\"></agentjds-badge>\n                <agentjds-badge text=\"Plannen\" variant=\"primary\"></agentjds-badge>\n                <agentjds-badge text=\"Status\" variant=\"success\"></agentjds-badge>\n                <agentjds-badge text=\"Rapporten\" variant=\"warning\"></agentjds-badge>\n              </div>\n            </div>\n          </div>\n\n          <div style=\"position: absolute; left: 24px; right: 24px; bottom: 20px;\">\n            <agentjds-disclaimer [text]=\"disclaimerText\" [centered]=\"true\"></agentjds-disclaimer>\n          </div>\n        </div>\n      </agentjds-background>\n    `,\n  }),\n}"
             },
             {
                 "name": "preview",
@@ -558,7 +558,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</agentjds-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: 'primary', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Required",
@@ -568,7 +568,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    placeholder: \"you@example.com\",\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: 'email',\n    size: 'md',\n    label: 'Email',\n    placeholder: 'you@example.com',\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "SAMPLE_LOGO_SRC",
@@ -588,7 +588,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"search\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: 'search', size: 'md', color: 'inherit' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Secondary",
@@ -598,7 +598,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Select model\",\n    variant: \"secondary\",\n    size: \"md\",\n    options,\n  },\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Select model',\n    variant: 'secondary',\n    size: 'md',\n    options,\n  },\n}"
             },
             {
                 "name": "Secondary",
@@ -608,7 +608,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"secondary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</agentjds-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: 'secondary', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Send",
@@ -618,7 +618,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    icon: \"send\",\n    variant: \"primary\",\n    size: \"md\",\n    shape: \"circle\",\n    ariaLabel: \"Send message\",\n  },\n}"
+                "defaultValue": "{\n  args: {\n    icon: 'send',\n    variant: 'primary',\n    size: 'md',\n    shape: 'circle',\n    ariaLabel: 'Send message',\n  },\n}"
             },
             {
                 "name": "Sizes",
@@ -638,7 +638,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"sm\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</agentjds-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: 'primary', size: 'sm', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Small",
@@ -648,7 +648,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { size: \"sm\", placeholder: \"Small input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { size: 'sm', placeholder: 'Small input' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Star",
@@ -658,7 +658,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"star\", size: \"lg\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: 'star', size: 'lg', color: 'warning' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "StatusVariants",
@@ -678,7 +678,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"warning\", size: \"md\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: 'warning', size: 'md', color: 'warning' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "WithError",
@@ -688,7 +688,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    error: \"Please enter a valid email\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: 'email',\n    size: 'md',\n    label: 'Email',\n    error: 'Please enter a valid email',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "WithError",
@@ -698,7 +698,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Assignee\",\n    placeholder: \"Select assignee\",\n    error: \"Please select an assignee\",\n    options: [\n      { label: \"Joris\", value: \"joris\" },\n      { label: \"Alex\", value: \"alex\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Assignee',\n    placeholder: 'Select assignee',\n    error: 'Please select an assignee',\n    options: [\n      { label: 'Joris', value: 'joris' },\n      { label: 'Alex', value: 'alex' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
             },
             {
                 "name": "WithError",
@@ -708,17 +708,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Approval\",\n    error: \"Please choose an option\",\n    options: [\n      { label: \"Approve\", value: \"approve\" },\n      { label: \"Reject\", value: \"reject\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
-            },
-            {
-                "name": "WithHint",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"password\",\n    size: \"md\",\n    label: \"Password\",\n    hint: \"At least 8 characters\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Approval',\n    error: 'Please choose an option',\n    options: [\n      { label: 'Approve', value: 'approve' },\n      { label: 'Reject', value: 'reject' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
             },
             {
                 "name": "WithHint",
@@ -728,7 +718,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Subscribe to release updates\",\n    hint: \"We send one update per sprint.\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Subscribe to release updates',\n    hint: 'We send one update per sprint.',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "WithHint",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    type: 'password',\n    size: 'md',\n    label: 'Password',\n    hint: 'At least 8 characters',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "WithLabel",
@@ -738,7 +738,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"text\",\n    size: \"md\",\n    label: \"Username\",\n    placeholder: \"Enter username\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: 'text',\n    size: 'md',\n    label: 'Username',\n    placeholder: 'Enter username',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Wordmark",
@@ -748,7 +748,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    src: \"\",\n    alt: \"AgentJ logo\",\n    text: \"AgentJ\",\n    mark: \"AJ\",\n    size: \"md\",\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      \"<agentjds-logo [src]=\\\"src\\\" [alt]=\\\"alt\\\" [text]=\\\"text\\\" [mark]=\\\"mark\\\" [size]=\\\"size\\\"></agentjds-logo>\",\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    src: '',\n    alt: 'AgentJ logo',\n    text: 'AgentJ',\n    mark: 'AJ',\n    size: 'md',\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      '<agentjds-logo [src]=\"src\" [alt]=\"alt\" [text]=\"text\" [mark]=\"mark\" [size]=\"size\"></agentjds-logo>',\n  }),\n}"
             }
         ],
         "functions": [],
@@ -770,17 +770,6 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<DropdownButtonComponent>",
                 "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<IconButtonComponent>",
-                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -823,6 +812,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<IconButtonComponent>",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<ChatBubbleComponent>",
                 "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
@@ -845,17 +845,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<IconComponent>",
-                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<HeadingComponent>",
                 "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "deprecated": false,
@@ -867,8 +856,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<InputComponent>",
-                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                "rawtype": "StoryObj<IconComponent>",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -880,6 +869,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputCheckboxComponent>",
                 "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputComponent>",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -971,7 +971,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"check\", size: \"md\", color: \"success\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: 'check', size: 'md', color: 'success' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Close",
@@ -981,7 +981,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"close\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: 'close', size: 'md', color: 'inherit' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Default",
@@ -991,7 +991,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: 'info', size: 'md', color: 'inherit' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Error",
@@ -1001,7 +1001,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"error\", size: \"md\", color: \"danger\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: 'error', size: 'md', color: 'danger' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1011,7 +1011,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<IconComponent>",
-                    "defaultValue": "{\n  component: IconComponent,\n  title: \"Primitives/Icon\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    name: {\n      control: { type: \"select\" },\n      options: [\n        \"close\",\n        \"check\",\n        \"info\",\n        \"warning\",\n        \"error\",\n        \"search\",\n        \"menu\",\n        \"arrow-down\",\n        \"arrow-up\",\n        \"star\",\n        \"plus\",\n        \"minus\",\n      ],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\"],\n    },\n    color: {\n      control: { type: \"select\" },\n      options: [\n        \"primary\",\n        \"secondary\",\n        \"danger\",\n        \"success\",\n        \"warning\",\n        \"inherit\",\n      ],\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: IconComponent,\n  title: 'Primitives/Icon',\n  tags: ['autodocs'],\n  argTypes: {\n    name: {\n      control: { type: 'select' },\n      options: [\n        'close',\n        'check',\n        'info',\n        'warning',\n        'error',\n        'search',\n        'menu',\n        'arrow-down',\n        'arrow-up',\n        'star',\n        'plus',\n        'minus',\n      ],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['xs', 'sm', 'md', 'lg', 'xl'],\n    },\n    color: {\n      control: { type: 'select' },\n      options: [\n        'primary',\n        'secondary',\n        'danger',\n        'success',\n        'warning',\n        'inherit',\n      ],\n    },\n  },\n}"
                 },
                 {
                     "name": "Search",
@@ -1021,7 +1021,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"search\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: 'search', size: 'md', color: 'inherit' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Star",
@@ -1031,7 +1031,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"star\", size: \"lg\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: 'star', size: 'lg', color: 'warning' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Warning",
@@ -1041,7 +1041,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"warning\", size: \"md\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: 'warning', size: 'md', color: 'warning' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts": [
@@ -1053,7 +1053,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    icon: \"attach\",\n    variant: \"ghost\",\n    size: \"md\",\n    shape: \"square\",\n    ariaLabel: \"Attach file\",\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    icon: 'attach',\n    variant: 'ghost',\n    size: 'md',\n    shape: 'square',\n    ariaLabel: 'Attach file',\n  },\n}"
                 },
                 {
                     "name": "Ghost",
@@ -1063,7 +1063,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    icon: \"mic\",\n    variant: \"ghost\",\n    size: \"md\",\n    shape: \"square\",\n    ariaLabel: \"Voice input\",\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    icon: 'mic',\n    variant: 'ghost',\n    size: 'md',\n    shape: 'square',\n    ariaLabel: 'Voice input',\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -1073,7 +1073,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<IconButtonComponent>",
-                    "defaultValue": "{\n  component: IconButtonComponent,\n  title: \"Composites/IconButton\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    icon: {\n      control: { type: \"select\" },\n      options: [\n        \"send\",\n        \"attach\",\n        \"mic\",\n        \"close\",\n        \"plus\",\n        \"search\",\n        \"menu\",\n        \"sparkle\",\n      ],\n    },\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    shape: {\n      control: { type: \"select\" },\n      options: [\"circle\", \"square\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: IconButtonComponent,\n  title: 'Composites/IconButton',\n  tags: ['autodocs'],\n  argTypes: {\n    icon: {\n      control: { type: 'select' },\n      options: [\n        'send',\n        'attach',\n        'mic',\n        'close',\n        'plus',\n        'search',\n        'menu',\n        'sparkle',\n      ],\n    },\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'secondary', 'danger', 'ghost'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    shape: {\n      control: { type: 'select' },\n      options: ['circle', 'square'],\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n}"
                 },
                 {
                     "name": "Send",
@@ -1083,7 +1083,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    icon: \"send\",\n    variant: \"primary\",\n    size: \"md\",\n    shape: \"circle\",\n    ariaLabel: \"Send message\",\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    icon: 'send',\n    variant: 'primary',\n    size: 'md',\n    shape: 'circle',\n    ariaLabel: 'Send message',\n  },\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts": [
@@ -1095,7 +1095,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: \"Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.\",\n    centered: true,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: 'Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.',\n    centered: true,\n  },\n}"
                 },
                 {
                     "name": "Default",
@@ -1105,7 +1105,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: \"Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.\",\n    centered: false,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: 'Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.',\n    centered: false,\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -1115,7 +1115,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<DisclaimerComponent>",
-                    "defaultValue": "{\n  component: DisclaimerComponent,\n  title: \"Primitives/Disclaimer\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    centered: {\n      control: \"boolean\",\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: DisclaimerComponent,\n  title: 'Primitives/Disclaimer',\n  tags: ['autodocs'],\n  argTypes: {\n    centered: {\n      control: 'boolean',\n    },\n  },\n}"
                 }
             ],
             "apps/agentj-design-system/.storybook/main.ts": [
@@ -1149,7 +1149,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    author: \"Alex\",\n    timestamp: \"10:34\",\n    message: \"Can we ship the dropdown variant in this sprint?\",\n    direction: \"incoming\",\n    tone: \"neutral\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    author: 'Alex',\n    timestamp: '10:34',\n    message: 'Can we ship the dropdown variant in this sprint?',\n    direction: 'incoming',\n    tone: 'neutral',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1159,7 +1159,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ChatBubbleComponent>",
-                    "defaultValue": "{\n  component: ChatBubbleComponent,\n  title: \"Primitives/Chat Bubble\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    direction: {\n      control: { type: \"select\" },\n      options: [\"incoming\", \"outgoing\"],\n    },\n    tone: {\n      control: { type: \"select\" },\n      options: [\"neutral\", \"primary\", \"success\", \"warning\"],\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: ChatBubbleComponent,\n  title: 'Primitives/Chat Bubble',\n  tags: ['autodocs'],\n  argTypes: {\n    direction: {\n      control: { type: 'select' },\n      options: ['incoming', 'outgoing'],\n    },\n    tone: {\n      control: { type: 'select' },\n      options: ['neutral', 'primary', 'success', 'warning'],\n    },\n  },\n}"
                 },
                 {
                     "name": "Outgoing",
@@ -1169,7 +1169,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    author: \"You\",\n    timestamp: \"10:35\",\n    message: \"Yes, let us include radio + checkbox too.\",\n    direction: \"outgoing\",\n    tone: \"primary\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    author: 'You',\n    timestamp: '10:35',\n    message: 'Yes, let us include radio + checkbox too.',\n    direction: 'outgoing',\n    tone: 'primary',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/button/button.stories.ts": [
@@ -1181,7 +1181,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"danger\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</agentjds-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: 'danger', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Disabled",
@@ -1191,7 +1191,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</agentjds-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: 'primary', size: 'md', disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Ghost",
@@ -1201,7 +1201,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"ghost\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</agentjds-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: 'ghost', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Large",
@@ -1211,7 +1211,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"lg\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</agentjds-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: 'primary', size: 'lg', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1221,7 +1221,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\n  component: ButtonComponent,\n  title: \"Primitives/Button\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n    type: {\n      control: { type: \"select\" },\n      options: [\"button\", \"submit\", \"reset\"],\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: ButtonComponent,\n  title: 'Primitives/Button',\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'secondary', 'danger', 'ghost'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: {\n      control: 'boolean',\n    },\n    type: {\n      control: { type: 'select' },\n      options: ['button', 'submit', 'reset'],\n    },\n  },\n}"
                 },
                 {
                     "name": "Primary",
@@ -1231,7 +1231,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</agentjds-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: 'primary', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Secondary",
@@ -1241,7 +1241,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"secondary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</agentjds-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: 'secondary', size: 'md', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Small",
@@ -1251,7 +1251,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"sm\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</agentjds-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: 'primary', size: 'sm', disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</agentjds-button>`,\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts": [
@@ -1263,7 +1263,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Claude Opus 4.1\",\n    variant: \"ghost\",\n    size: \"md\",\n    options,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Claude Opus 4.1',\n    variant: 'ghost',\n    size: 'md',\n    options,\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -1273,7 +1273,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<DropdownButtonComponent>",
-                    "defaultValue": "{\n  component: DropdownButtonComponent,\n  title: \"Composites/DropdownButton\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: DropdownButtonComponent,\n  title: 'Composites/DropdownButton',\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'secondary', 'danger', 'ghost'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n}"
                 },
                 {
                     "name": "options",
@@ -1283,7 +1283,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n  { label: \"Claude Opus 4.1\", value: \"claude-opus-4-1\" },\n  { label: \"Claude Sonnet 4.5\", value: \"claude-sonnet-4-5\" },\n  { label: \"GPT-4o\", value: \"gpt-4o\" },\n  { label: \"Gemini 2.0 Flash\", value: \"gemini-2-flash\", disabled: true },\n]"
+                    "defaultValue": "[\n  { label: 'Claude Opus 4.1', value: 'claude-opus-4-1' },\n  { label: 'Claude Sonnet 4.5', value: 'claude-sonnet-4-5' },\n  { label: 'GPT-4o', value: 'gpt-4o' },\n  { label: 'Gemini 2.0 Flash', value: 'gemini-2-flash', disabled: true },\n]"
                 },
                 {
                     "name": "Secondary",
@@ -1293,7 +1293,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Select model\",\n    variant: \"secondary\",\n    size: \"md\",\n    options,\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Select model',\n    variant: 'secondary',\n    size: 'md',\n    options,\n  },\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/background/background.stories.ts": [
@@ -1305,7 +1305,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    color: \"#ffffff\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    color: '#ffffff',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
                 },
                 {
                     "name": "LightGray",
@@ -1315,7 +1315,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    color: \"#f4f7fb\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    color: '#f4f7fb',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-background [color]=\"color\"></agentjds-background>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1325,7 +1325,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<BackgroundComponent>",
-                    "defaultValue": "{\n  component: BackgroundComponent,\n  title: \"Primitives/Background\",\n  tags: [\"autodocs\"],\n  parameters: {\n    layout: \"fullscreen\",\n  },\n  argTypes: {\n    color: {\n      control: \"color\",\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: BackgroundComponent,\n  title: 'Primitives/Background',\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n  },\n  argTypes: {\n    color: {\n      control: 'color',\n    },\n  },\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts": [
@@ -1337,7 +1337,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { text: \"Badge\", variant: \"neutral\", size: \"md\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></agentjds-badge>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { text: 'Badge', variant: 'neutral', size: 'md' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></agentjds-badge>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1347,7 +1347,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<BadgeComponent>",
-                    "defaultValue": "{\n  component: BadgeComponent,\n  title: \"Primitives/Badge\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"neutral\", \"primary\", \"success\", \"warning\", \"danger\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\"],\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: BadgeComponent,\n  title: 'Primitives/Badge',\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['neutral', 'primary', 'success', 'warning', 'danger'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md'],\n    },\n  },\n}"
                 },
                 {
                     "name": "StatusVariants",
@@ -1369,7 +1369,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    level: 1,\n    size: \"xl\",\n    muted: false,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    level: 1,\n    size: 'xl',\n    muted: false,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
                 },
                 {
                     "name": "Display",
@@ -1379,7 +1379,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    level: 1,\n    size: \"2xl\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    level: 1,\n    size: '2xl',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\">Hoe kan ik u helpen?</agentjds-heading>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1389,7 +1389,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<HeadingComponent>",
-                    "defaultValue": "{\n  component: HeadingComponent,\n  title: \"Primitives/Heading\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    level: {\n      control: { type: \"select\" },\n      options: [1, 2, 3, 4, 5, 6],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\", \"2xl\"],\n    },\n    muted: {\n      control: \"boolean\",\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: HeadingComponent,\n  title: 'Primitives/Heading',\n  tags: ['autodocs'],\n  argTypes: {\n    level: {\n      control: { type: 'select' },\n      options: [1, 2, 3, 4, 5, 6],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl'],\n    },\n    muted: {\n      control: 'boolean',\n    },\n  },\n}"
                 },
                 {
                     "name": "Muted",
@@ -1399,99 +1399,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    level: 2,\n    size: \"md\",\n    muted: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Subtitle text</agentjds-heading>`,\n  }),\n}"
-                }
-            ],
-            "libs/agent-j-components/src/lib/primitives/input/input.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: { type: \"text\", size: \"md\", placeholder: \"Enter text...\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
-                },
-                {
-                    "name": "Disabled",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: { size: \"md\", placeholder: \"Disabled\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></agentjds-input>`,\n  }),\n}"
-                },
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: { size: \"lg\", placeholder: \"Large input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<InputComponent>",
-                    "defaultValue": "{\n  component: InputComponent,\n  title: \"Primitives/Input\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    type: {\n      control: { type: \"select\" },\n      options: [\"text\", \"email\", \"password\", \"number\", \"tel\", \"url\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    readonly: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
-                },
-                {
-                    "name": "Required",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    placeholder: \"you@example.com\",\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></agentjds-input>`,\n  }),\n}"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: { size: \"sm\", placeholder: \"Small input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
-                },
-                {
-                    "name": "WithError",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    error: \"Please enter a valid email\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></agentjds-input>`,\n  }),\n}"
-                },
-                {
-                    "name": "WithHint",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"password\",\n    size: \"md\",\n    label: \"Password\",\n    hint: \"At least 8 characters\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></agentjds-input>`,\n  }),\n}"
-                },
-                {
-                    "name": "WithLabel",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"text\",\n    size: \"md\",\n    label: \"Username\",\n    placeholder: \"Enter username\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    level: 2,\n    size: 'md',\n    muted: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Subtitle text</agentjds-heading>`,\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
@@ -1503,7 +1411,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"I accept the terms and conditions\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'I accept the terms and conditions',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1513,7 +1421,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputCheckboxComponent>",
-                    "defaultValue": "{\n  component: InputCheckboxComponent,\n  title: \"Primitives/Input Checkbox\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                    "defaultValue": "{\n  component: InputCheckboxComponent,\n  title: 'Primitives/Input Checkbox',\n  tags: ['autodocs'],\n  argTypes: {\n    disabled: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
                 },
                 {
                     "name": "WithHint",
@@ -1523,7 +1431,99 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Subscribe to release updates\",\n    hint: \"We send one update per sprint.\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Subscribe to release updates',\n    hint: 'We send one update per sprint.',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+                }
+            ],
+            "libs/agent-j-components/src/lib/primitives/input/input.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: { type: 'text', size: 'md', placeholder: 'Enter text...' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                },
+                {
+                    "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: { size: 'md', placeholder: 'Disabled', disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></agentjds-input>`,\n  }),\n}"
+                },
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: { size: 'lg', placeholder: 'Large input' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<InputComponent>",
+                    "defaultValue": "{\n  component: InputComponent,\n  title: 'Primitives/Input',\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: { type: 'select' },\n      options: ['text', 'email', 'password', 'number', 'tel', 'url'],\n    },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: { control: 'boolean' },\n    readonly: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
+                },
+                {
+                    "name": "Required",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'email',\n    size: 'md',\n    label: 'Email',\n    placeholder: 'you@example.com',\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></agentjds-input>`,\n  }),\n}"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: { size: 'sm', placeholder: 'Small input' },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
+                },
+                {
+                    "name": "WithError",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'email',\n    size: 'md',\n    label: 'Email',\n    error: 'Please enter a valid email',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></agentjds-input>`,\n  }),\n}"
+                },
+                {
+                    "name": "WithHint",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'password',\n    size: 'md',\n    label: 'Password',\n    hint: 'At least 8 characters',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></agentjds-input>`,\n  }),\n}"
+                },
+                {
+                    "name": "WithLabel",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    type: 'text',\n    size: 'md',\n    label: 'Username',\n    placeholder: 'Enter username',\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
@@ -1535,7 +1535,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Status\",\n    placeholder: \"Select status\",\n    size: \"md\",\n    options: [\n      { label: \"Open\", value: \"open\" },\n      { label: \"In Progress\", value: \"progress\" },\n      { label: \"Done\", value: \"done\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Status',\n    placeholder: 'Select status',\n    size: 'md',\n    options: [\n      { label: 'Open', value: 'open' },\n      { label: 'In Progress', value: 'progress' },\n      { label: 'Done', value: 'done' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1545,7 +1545,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputDropdownComponent>",
-                    "defaultValue": "{\n  component: InputDropdownComponent,\n  title: \"Primitives/Input Dropdown\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                    "defaultValue": "{\n  component: InputDropdownComponent,\n  title: 'Primitives/Input Dropdown',\n  tags: ['autodocs'],\n  argTypes: {\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n    disabled: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
                 },
                 {
                     "name": "WithError",
@@ -1555,7 +1555,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Assignee\",\n    placeholder: \"Select assignee\",\n    error: \"Please select an assignee\",\n    options: [\n      { label: \"Joris\", value: \"joris\" },\n      { label: \"Alex\", value: \"alex\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Assignee',\n    placeholder: 'Select assignee',\n    error: 'Please select an assignee',\n    options: [\n      { label: 'Joris', value: 'joris' },\n      { label: 'Alex', value: 'alex' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
@@ -1567,7 +1567,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Priority\",\n    options: [\n      { label: \"Low\", value: \"low\" },\n      { label: \"Medium\", value: \"medium\" },\n      { label: \"High\", value: \"high\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Priority',\n    options: [\n      { label: 'Low', value: 'low' },\n      { label: 'Medium', value: 'medium' },\n      { label: 'High', value: 'high' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1577,7 +1577,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputRadioComponent>",
-                    "defaultValue": "{\n  component: InputRadioComponent,\n  title: \"Primitives/Input Radio\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                    "defaultValue": "{\n  component: InputRadioComponent,\n  title: 'Primitives/Input Radio',\n  tags: ['autodocs'],\n  argTypes: {\n    disabled: { control: 'boolean' },\n    required: { control: 'boolean' },\n  },\n}"
                 },
                 {
                     "name": "WithError",
@@ -1587,7 +1587,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Approval\",\n    error: \"Please choose an option\",\n    options: [\n      { label: \"Approve\", value: \"approve\" },\n      { label: \"Reject\", value: \"reject\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Approval',\n    error: 'Please choose an option',\n    options: [\n      { label: 'Approve', value: 'approve' },\n      { label: 'Reject', value: 'reject' },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts": [
@@ -1599,7 +1599,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    placeholder: \"Leer over...\",\n    disabled: false,\n    maxRows: 6,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" [maxRows]=\"maxRows\" />\n    </div>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Leer over...',\n    disabled: false,\n    maxRows: 6,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" [maxRows]=\"maxRows\" />\n    </div>`,\n  }),\n}"
                 },
                 {
                     "name": "Disabled",
@@ -1609,7 +1609,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    placeholder: \"Leer over...\",\n    disabled: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" />\n    </div>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Leer over...',\n    disabled: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<div style=\"width: 600px; padding: 16px;\">\n      <agentjds-chat-input [placeholder]=\"placeholder\" [disabled]=\"disabled\" />\n    </div>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1619,7 +1619,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ChatInputComponent>",
-                    "defaultValue": "{\n  component: ChatInputComponent,\n  title: \"UI Components/ChatInput\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    placeholder: {\n      control: \"text\",\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n    maxRows: {\n      control: { type: \"number\", min: 1, max: 20 },\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: ChatInputComponent,\n  title: 'UI Components/ChatInput',\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n    maxRows: {\n      control: { type: 'number', min: 1, max: 20 },\n    },\n  },\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts": [
@@ -1631,7 +1631,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    src: SAMPLE_LOGO_SRC,\n    alt: \"AgentJ logo\",\n    size: \"md\",\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      \"<agentjds-logo [src]=\\\"src\\\" [alt]=\\\"alt\\\" [size]=\\\"size\\\"></agentjds-logo>\",\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    src: SAMPLE_LOGO_SRC,\n    alt: 'AgentJ logo',\n    size: 'md',\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      '<agentjds-logo [src]=\"src\" [alt]=\"alt\" [size]=\"size\"></agentjds-logo>',\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -1641,7 +1641,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<LogoComponent>",
-                    "defaultValue": "{\n  component: LogoComponent,\n  title: \"Primitives/Logo\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    src: { control: \"text\" },\n    alt: { control: \"text\" },\n    text: { control: \"text\" },\n    mark: { control: \"text\" },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n  },\n}"
+                    "defaultValue": "{\n  component: LogoComponent,\n  title: 'Primitives/Logo',\n  tags: ['autodocs'],\n  argTypes: {\n    src: { control: 'text' },\n    alt: { control: 'text' },\n    text: { control: 'text' },\n    mark: { control: 'text' },\n    size: {\n      control: { type: 'select' },\n      options: ['sm', 'md', 'lg'],\n    },\n  },\n}"
                 },
                 {
                     "name": "SAMPLE_LOGO_SRC",
@@ -1671,7 +1671,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    src: \"\",\n    alt: \"AgentJ logo\",\n    text: \"AgentJ\",\n    mark: \"AJ\",\n    size: \"md\",\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      \"<agentjds-logo [src]=\\\"src\\\" [alt]=\\\"alt\\\" [text]=\\\"text\\\" [mark]=\\\"mark\\\" [size]=\\\"size\\\"></agentjds-logo>\",\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    src: '',\n    alt: 'AgentJ logo',\n    text: 'AgentJ',\n    mark: 'AJ',\n    size: 'md',\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      '<agentjds-logo [src]=\"src\" [alt]=\"alt\" [text]=\"text\" [mark]=\"mark\" [size]=\"size\"></agentjds-logo>',\n  }),\n}"
                 }
             ],
             "libs/agent-j-components/src/lib/primitives/primitives.stories.ts": [
@@ -1683,7 +1683,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta",
-                    "defaultValue": "{\n  title: \"Primitives/Overview\",\n  tags: [\"autodocs\"],\n  decorators: [\n    moduleMetadata({\n      imports: [\n        BackgroundComponent,\n        BadgeComponent,\n        ChatInputComponent,\n        DisclaimerComponent,\n        DropdownButtonComponent,\n        LogoComponent,\n      ],\n    }),\n  ],\n}"
+                    "defaultValue": "{\n  title: 'Primitives/Overview',\n  tags: ['autodocs'],\n  decorators: [\n    moduleMetadata({\n      imports: [\n        BackgroundComponent,\n        BadgeComponent,\n        ChatInputComponent,\n        DisclaimerComponent,\n        DropdownButtonComponent,\n        LogoComponent,\n      ],\n    }),\n  ],\n}"
                 },
                 {
                     "name": "Playground",
@@ -1693,7 +1693,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    props: {\n      modelOptions: [\n        { label: \"Claude Sonnet 4.5\", value: \"claude-sonnet-4-5\" },\n        { label: \"Claude Opus 4.1\", value: \"claude-opus-4-1\" },\n        { label: \"GPT-4o\", value: \"gpt-4o\" },\n      ],\n      disclaimerText:\n        \"Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.\",\n    },\n    template: `\n      <agentjds-background color=\"#0f172a\">\n        <div style=\"position: relative; min-height: 100vh; width: 100%; color: #e2e8f0; overflow: hidden;\">\n          <div style=\"position: absolute; top: 24px; left: 24px; display: flex; align-items: center; gap: 12px;\">\n            <agentjds-logo size=\"sm\" mark=\"AJ\" text=\"AgentJ\"></agentjds-logo>\n            <agentjds-dropdown-button\n              label=\"Claude Sonnet 4.5\"\n              variant=\"ghost\"\n              size=\"md\"\n              [options]=\"modelOptions\"\n            ></agentjds-dropdown-button>\n          </div>\n\n          <div style=\"min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;\">\n            <div style=\"width: min(760px, 100%); display: flex; flex-direction: column; align-items: center; gap: 14px;\">\n              <div style=\"width: min(640px, 100%);\">\n                <agentjds-chat-input\n                  placeholder=\"Vraag iets over jouw werk...\"\n                  [maxRows]=\"6\"\n                ></agentjds-chat-input>\n              </div>\n\n              <div style=\"display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;\">\n                <agentjds-badge text=\"Taken\"></agentjds-badge>\n                <agentjds-badge text=\"Plannen\" variant=\"primary\"></agentjds-badge>\n                <agentjds-badge text=\"Status\" variant=\"success\"></agentjds-badge>\n                <agentjds-badge text=\"Rapporten\" variant=\"warning\"></agentjds-badge>\n              </div>\n            </div>\n          </div>\n\n          <div style=\"position: absolute; left: 24px; right: 24px; bottom: 20px;\">\n            <agentjds-disclaimer [text]=\"disclaimerText\" [centered]=\"true\"></agentjds-disclaimer>\n          </div>\n        </div>\n      </agentjds-background>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    props: {\n      modelOptions: [\n        { label: 'Claude Sonnet 4.5', value: 'claude-sonnet-4-5' },\n        { label: 'Claude Opus 4.1', value: 'claude-opus-4-1' },\n        { label: 'GPT-4o', value: 'gpt-4o' },\n      ],\n      disclaimerText:\n        'Wij zijn niet verbonden met eigenaars of bedrijven die de LLM-modellen op deze website hebben ontwikkeld.',\n    },\n    template: `\n      <agentjds-background color=\"#0f172a\">\n        <div style=\"position: relative; min-height: 100vh; width: 100%; color: #e2e8f0; overflow: hidden;\">\n          <div style=\"position: absolute; top: 24px; left: 24px; display: flex; align-items: center; gap: 12px;\">\n            <agentjds-logo size=\"sm\" mark=\"AJ\" text=\"AgentJ\"></agentjds-logo>\n            <agentjds-dropdown-button\n              label=\"Claude Sonnet 4.5\"\n              variant=\"ghost\"\n              size=\"md\"\n              [options]=\"modelOptions\"\n            ></agentjds-dropdown-button>\n          </div>\n\n          <div style=\"min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;\">\n            <div style=\"width: min(760px, 100%); display: flex; flex-direction: column; align-items: center; gap: 14px;\">\n              <div style=\"width: min(640px, 100%);\">\n                <agentjds-chat-input\n                  placeholder=\"Vraag iets over jouw werk...\"\n                  [maxRows]=\"6\"\n                ></agentjds-chat-input>\n              </div>\n\n              <div style=\"display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;\">\n                <agentjds-badge text=\"Taken\"></agentjds-badge>\n                <agentjds-badge text=\"Plannen\" variant=\"primary\"></agentjds-badge>\n                <agentjds-badge text=\"Status\" variant=\"success\"></agentjds-badge>\n                <agentjds-badge text=\"Rapporten\" variant=\"warning\"></agentjds-badge>\n              </div>\n            </div>\n          </div>\n\n          <div style=\"position: absolute; left: 24px; right: 24px; bottom: 20px;\">\n            <agentjds-disclaimer [text]=\"disclaimerText\" [centered]=\"true\"></agentjds-disclaimer>\n          </div>\n        </div>\n      </agentjds-background>\n    `,\n  }),\n}"
                 }
             ],
             "apps/agentj-design-system/.storybook/preview.ts": [
@@ -1732,19 +1732,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<DropdownButtonComponent>",
                     "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<IconButtonComponent>",
-                    "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1790,6 +1777,19 @@
                     "kind": 184
                 }
             ],
+            "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<IconButtonComponent>",
+                    "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
                 {
                     "name": "Story",
@@ -1816,19 +1816,6 @@
                     "kind": 184
                 }
             ],
-            "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<IconComponent>",
-                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts": [
                 {
                     "name": "Story",
@@ -1842,13 +1829,13 @@
                     "kind": 184
                 }
             ],
-            "libs/agent-j-components/src/lib/primitives/input/input.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<InputComponent>",
-                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
+                    "rawtype": "StoryObj<IconComponent>",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1862,6 +1849,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputCheckboxComponent>",
                     "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "libs/agent-j-components/src/lib/primitives/input/input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputComponent>",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
