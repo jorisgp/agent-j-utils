@@ -132,9 +132,9 @@ jobs:
               --body "Release agent-j-style ${{ steps.release.outputs.version }}"
           fi
 
-      # GITHUB_TOKEN pushes do not trigger push workflows. Dispatch the gate
-      # explicitly so its check runs against the prepared branch tip.
-      - name: Verify prepared release
+      - name: Verify prepared release head
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Pushes using GITHUB_TOKEN do not trigger the gate's push workflow.
+        # Dispatch explicitly so the check runs on the generated release commit.
         run: gh workflow run release-preparation-gate.yml --ref "${RELEASE_BRANCH}"

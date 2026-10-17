@@ -1,0 +1,34 @@
+@if (valid()) {
+  <svg:title>{{ accessibleLabel() }}</svg:title>
+  <svg:rect
+    class="agentjds-candle__hit"
+    [attr.x]="x() - width() / 2 - 4"
+    [attr.y]="geometry().high - 4"
+    [attr.width]="width() + 8"
+    [attr.height]="geometry().low - geometry().high + 8"
+  />
+  <svg:line
+    class="agentjds-candle__wick"
+    [attr.x1]="x()"
+    [attr.x2]="x()"
+    [attr.y1]="geometry().high"
+    [attr.y2]="geometry().low"
+  />
+  @if (direction() === 'doji') {
+    <svg:line
+      class="agentjds-candle__body"
+      [attr.x1]="x() - width() / 2"
+      [attr.x2]="x() + width() / 2"
+      [attr.y1]="geometry().top"
+      [attr.y2]="geometry().top"
+    />
+  } @else {
+    <svg:rect
+      class="agentjds-candle__body"
+      [attr.x]="x() - width() / 2"
+      [attr.y]="geometry().top"
+      [attr.width]="width()"
+      [attr.height]="geometry().bottom - geometry().top"
+    />
+  }
+}

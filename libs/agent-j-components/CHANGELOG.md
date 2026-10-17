@@ -1,4 +1,4 @@
-## 0.0.18 (2026-09-06)
+## 0.0.18 (2026-10-17)
 
 This was a version bump only for agent-j-components to align it with other projects, there were no code changes.
 

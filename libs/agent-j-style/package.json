@@ -1,5 +1,6 @@
 {
   "name": "@agent-j/style",
+  "type": "module",
   "version": "0.0.3",
   "license": "MIT",
   "style": "./src/tokens.css",
@@ -22,5 +23,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jorisgp/agent-j-utils.git"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.9"
   }
 }

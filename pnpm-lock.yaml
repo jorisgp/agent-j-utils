@@ -226,7 +226,11 @@ importers:
         specifier: ^2.3.0
         version: 2.8.1
 
-  libs/agent-j-style: {}
+  libs/agent-j-style:
+    devDependencies:
+      '@types/node':
+        specifier: 20.19.9
+        version: 20.19.9
 
   tools/agent-j-generator:
     dependencies:
